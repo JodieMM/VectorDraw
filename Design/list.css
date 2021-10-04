@@ -1,0 +1,30 @@
+/*--- LIST STYLES ---*/
+
+.list{
+	margin-left: 10%;
+	font-size: 26px;
+	padding-bottom: 1em;
+}
+
+.list:before{
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left: 8%;
+	margin-top: 0.22em;
+	border-radius: 11px;
+	background-color: #9a61b2;
+	background: linear-gradient(to bottom right, #9a61b2, #d147a3);
+	content: "";
+}
+
+.list:nth-child(even):before{
+	background-color: #d147a3;
+	background: linear-gradient(to bottom right, #d147a3, #9a61b2);
+}
+
+
+
+
+
+

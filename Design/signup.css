@@ -1,0 +1,149 @@
+/*--- SIGNUP STYLES ---*/
+
+/* For Mobile */
+
+/* Sign Up */
+.signup{
+	padding: 1em;
+	border-bottom: 2px solid #adadad;
+	background: linear-gradient(to bottom right, #9a61b2, #d147a3);
+	color: white;
+}
+
+.signup h1{
+	padding-bottom: 0.5em;
+}
+
+.inputline{
+	text-align: center;
+	padding: 1em;
+}
+
+.inputline input{
+	width: 85%;
+	margin: 0.5em;
+	padding-left: 0.25em;
+	border: 1px solid #adadad;
+	border-radius: 3px;
+	font: inherit;
+}
+
+.inputline input[type=checkbox]{
+	width: auto;
+}
+
+.inputline input[type=checkbox]:focus{
+	box-shadow: none;
+}
+
+.inputline input:focus{
+	border: 1px solid #adadad;
+	box-shadow: 0 0 4px #61C5FA;
+}
+
+.inputline button{
+	width: 10em;
+	height: 3em;
+	margin: auto;
+	border: none;
+	border-radius: 3em;
+	box-shadow: 0 0 15px #decce5;
+	background: linear-gradient(to bottom, #653b78 0%, #9a61b2 50%, #824c9a 51%, #b287c4 100%);
+	font: inherit;
+	color: white;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.inputline button:hover{
+	transform: scale(1.05, 1.05);
+}
+
+.inputline button:focus{
+	outline: none;
+}
+
+p.error{
+	display: none;
+	font-style: italic;
+	font-size: 22px;
+}
+
+/* Log In */
+.fourty input{
+	/* width: 50%; */
+	margin-bottom: 0em;
+}
+
+/* Account Details */
+.inputline.details{
+	text-align: left;
+}
+
+.details p{
+	padding: 0;
+	width: 9em;
+}
+
+.details input{
+	width: 10em;
+	margin: 0em;
+	margin-left: 1em;
+}
+
+.details input[type=checkbox]{
+	width: 2em;
+	height: 2em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.details input[type=checkbox]:focus{
+	box-shadow: none;
+}
+
+
+/* For Larger Mobiles */
+@media only screen and (min-width: 600px){
+	.inputline input{
+		width: 50%;
+		padding-left: 0.5em;
+	}
+	
+	.inputline button{
+		width: 15em;
+	}
+}
+
+/* For Tablets */
+@media only screen and (min-width: 768px){
+	.inputline input{
+		width: 40%;
+	}
+	
+	.fourty input{
+		width: 40%;
+	}
+	
+	.details p{
+		width: 11em;
+		text-align: right;
+	}
+	
+	.details input[type=checkbox]{
+		margin-left: 5em;
+		margin-right: 4em;
+	}
+}
+
+
+/* For Full Screen */
+@media only screen and (min-width: 960px){
+	.inputline input{
+		width: 30%;
+	}
+	
+	.fourty input{
+		width: 40%;
+	}
+}

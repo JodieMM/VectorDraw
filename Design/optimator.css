@@ -1,0 +1,304 @@
+/*--- CONTENT STYLES ---*/
+
+/* Colours */
+:root {
+	--grey01: #adadad;
+	--grey02: #6c6c6c;
+	--black01: #4d4d4d;
+	--black02: #404040;
+	--black03: #383838;
+	--black04: #333333;
+
+	--purple01: #decce5;
+	--purple02: #b287c4;	
+	--purple03: #9a61b2;	/* MAIN */
+	--purple04: #824c9a; 
+	--purple05: #653b78;
+
+	--pink: #d147a3;
+	--gold: #ada485;
+	--green: #47d147;
+
+	--border: 1px solid var(--black04);
+	}
+
+
+
+/* Sizing Widths */
+/*
+	Small Mobile: <600px
+	Mobile: <768px
+	Tablet: <860px
+	Desktop: <960px
+	Fullscreen: >=960px
+*/
+
+
+
+/*--- TOP MENU ---*/
+
+.optionMenu{
+	width: 100%;
+	display: inline-block;
+    background-color: var(--black02);
+	border-bottom: var(--border);
+}
+
+.optionMenu div{
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0.3em 0.2em;
+	padding: 2px;
+	float: left;	
+	text-align: center;
+	font: inherit;
+	color: white;
+	background-color: var(--black02);
+	transition: background-color 0.5s;
+	cursor: pointer;
+	border-radius: 0.25em;
+}
+
+.optionMenu div i{
+	padding: 15% 0;
+}
+
+.optionMenu .spacer{
+	width: 0.5em;
+	cursor: default;
+}
+
+.optionMenuBtn:hover , .optionMenuSwap:hover{
+	background-color: var(--purple03);
+}
+
+.optionMenuBtn.active , .optionMenuSwap.active{
+	background-color: var(--purple04);;
+}
+
+#optiIcon a{
+	color: transparent;
+    transition: none;
+}
+
+#optiIcon img{
+	width: 1.25em;
+    height: 1.25em;
+    padding-top: 0.125em;
+}
+
+
+
+/*--- MIDDLE DISPLAY ---*/
+
+.middleDisplay{
+	width: 100%;
+	height: 80%;
+	min-height: 300px;
+}
+
+
+
+/*--- CANVAS ---*/
+
+.canvas{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;	
+}
+
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.canvas #undoZoom{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	color: var(--purple02);
+	z-index: 10;
+	display: none;
+	transition: color 0.5s;
+}
+
+.canvas #undoZoom:hover{
+	color: var(--purple03);
+}
+
+
+
+/*--- SIDE PANEL ---*/
+
+.panel{
+	display: none;
+	height: 100%;
+	width: 20%;
+	background-color: var(--black01);
+	border-left: var(--border);
+	box-sizing: border-box;
+	float: right;
+	z-index: 10;
+}
+
+.panelPane{
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	color: white;
+}
+
+.panelPaneHeader{
+	width: 100%;
+	padding: 0.5em;
+	background-color: var(--black03);
+	box-sizing: border-box;
+	border-bottom: var(--border);
+}
+
+.panelPaneScroll{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.panelPaneHideHeader{
+	padding: 0.5em;
+	display: flow-root;
+	background-color: var(--black02);
+}
+
+.panelPaneHideHeader p{
+	display: inline-block;
+}
+
+.panelPaneHideHeaderBtn{
+	background-color: transparent;
+	float: right;
+	border: none;
+	height: 2em;
+	color: white;
+}
+
+.panelPaneHidePanel{
+	height: 0;
+	overflow: hidden;
+}
+
+.panelPaneHidePanel.active{
+	height: auto;
+	padding: 0.5em;
+}
+
+
+
+/*--- INPUT CONTROLS ---*/
+
+.inputBreak{
+	width: 100%;
+	height: 1em;
+}
+
+.folded{
+	display: none;
+}
+
+.toggleSwitch{
+	display: inline-block;
+    width: 100%;
+	padding: 0.2em;
+	box-sizing: border-box;
+    border-radius: 1em;
+	background-color: var(--grey02);   
+	transition: background-color 0.5s; 
+}
+
+.toggleSwitchBtn{
+	display: inline;
+    padding: 0em 0.3em;
+    border-radius: 1em;
+    background-color: var(--grey01);
+    color: var(--black02);
+}
+
+.toggleSwitch.active{
+	background-color: var(--purple03);
+}
+
+.toggleSwitchBtn.active{
+	float: right;
+}
+
+input[type='color']{
+	width: 100%;
+	height: 3em;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+input[type='number']{
+	width: 100%;
+	box-sizing: border-box;
+	font: inherit;
+	margin-top: 0.5em;
+}
+
+.panelPaneHidePanel a, .panelPaneHidePanel button{
+	display: inline-block;
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	box-sizing: border-box;
+	font: inherit;
+	text-align: center;
+    border-radius: 1.5em;
+    border: none;      
+    text-decoration: none;
+    background-color: var(--grey02);
+	color: white;
+	transition: background-color 0.5s;
+}
+
+.panelPaneHidePanel a:hover, .panelPaneHidePanel button:hover{
+	background-color: var(--purple03);
+}
+
+
+/*--- SCROLL BAR ---*/
+
+.panel ::-webkit-scrollbar {
+	width: 10px;
+}
+
+.panel ::-webkit-scrollbar-track {
+	background: var(--black02);
+}
+
+.panel ::-webkit-scrollbar-thumb {
+	background: var(--grey01);
+}
+
+.panel ::-webkit-scrollbar-thumb:hover {
+	background: var(--purple03);
+}
+
+.panel ::-webkit-scrollbar-thumb:active {
+	background: var(--purple04);
+}
+
+
+
+/*--- FOOTER ---*/
+
+.footer{
+	border-top: var(--border);
+}

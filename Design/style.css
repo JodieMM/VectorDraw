@@ -1,0 +1,204 @@
+/*--- CONTENT STYLES ---*/
+
+/* Colours */
+/*
+	PURPLE: #decce5; #b287c4; (MAIN) #9a61b2; #824c9a; #653b78;
+	PINK: #d147a3;
+	GREY: #adadad;
+	GOLD: #ada485;
+	GREEN: #47d147;
+*/
+
+/* Sizing Widths */
+/*
+	Small Mobile: <600px
+	Mobile: <768px
+	Tablet: <860px
+	Desktop: <960px
+	Fullscreen: >=960px
+*/
+
+/* Clear Originals */
+p{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* For Mobile */
+
+a{
+	color: #653b78;
+	transition: color 0.5s ease;
+}
+
+a:hover{
+	color: #993399;
+}
+
+a:active{
+	color: #d147a3;
+}
+
+h2{
+	margin-bottom: 0.5em;
+}
+
+h4{
+	padding-left: 0.5em;
+}
+
+.head{
+	border-bottom: 2px solid #adadad;
+	padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 6em;
+    color: white;	
+	background: linear-gradient(to bottom right, #9a61b2, #d147a3);
+}	
+
+.middle{
+	padding: 1.5em;
+	border-bottom: 2px solid #adadad;
+}
+
+.middle p{
+	display: inline-block;
+	padding-top: 1em;
+	vertical-align: top;
+	text-align: center;
+}
+
+.middle h1{
+	width: 5em;
+	margin: auto;
+	padding: 0em 0.5em 1em 0.5em;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.middle h1:before{
+	display: block;
+	position: absolute;
+	width: 80%;
+	height: 4px;
+	left: 10%;
+	margin-top: 0.7em;
+	background-color: #9a61b2;
+	content: "";
+	z-index: -1;
+}
+
+.middle img{
+	display: none;
+	vertical-align: middle;
+	border: 2px solid #adadad;
+}
+
+button.button {
+	display: block;
+	width: 10em;
+	margin: 1.5em auto;
+	padding: 0.5em;
+	text-align: center;
+	border: none;
+	border-bottom: 0.5em solid #824c9a;
+	border-radius: 3em;
+	background-color: #9a61b2;
+	font: inherit;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+button.button:hover{
+	background-color: #824c9a;
+	border-color: #653b78;
+	transform: scale(1.05, 1.05);
+}
+
+button:focus{
+	outline: none;
+}
+
+.break{
+	display: block;
+	height: 40px;
+}
+
+p.tab{
+	display: block;
+	padding: 0.5em 0em 0.5em 1em;
+}
+
+p.tab2{
+	display: block;
+	padding: 0em 0em 0.5em 2em;
+}
+
+p.tab3{
+	display: block;
+	padding: 0em 0em 0.5em 3em;
+}
+
+.full p{
+	text-align: left;
+}
+
+/* For Larger Mobile */
+@media only screen and (min-width: 600px){
+	.middle h1{
+		width: 7em;
+	}
+	
+	button.button {
+		display: block;
+		width: 15em;
+	}
+}
+
+
+/* For Tablets */
+@media only screen and (min-width: 768px){
+	.middle h1{
+		width: 10em;
+	}
+	
+	.full p{
+		width: auto;
+	}
+	
+	.separater
+	{
+		width: 10em;
+	}
+}
+
+
+/* For Desktop */
+@media only screen and (min-width: 860px){
+	.middle img{
+		display: inline-block;
+		width: 25%;
+		margin-left: 2%;
+	}
+	
+	.middle p{
+		width: 70%;
+		text-align: left;
+	}
+	
+	.full p{
+		width: auto;
+	}
+}
+
+
+
+

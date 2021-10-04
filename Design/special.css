@@ -1,0 +1,88 @@
+/*--- BASE STYLES ---*/
+
+/* Homepage */
+img.big{
+	display: block;
+	width: 100%;
+	height: 10em;
+	border-bottom: 2px solid #adadad;
+	object-fit: cover;
+	object-position: top left;
+}
+
+@media only screen and (min-width: 860px){
+	img.big{
+		height: 15em;
+	}
+}
+
+@media only screen and (min-width: 960px){
+	img.big{
+		height: 20em;
+	}
+}
+
+/* Homepage Notification */
+.notice{
+	background: linear-gradient(to top, #9a61b2, #d147a3);
+	color: white;
+	text-align: center;
+}
+
+.notice h1{
+	font-size: 2em;
+	padding: 0.5em;
+}
+
+.notice #betacheckbtn{
+	font-size: 1.2em;
+}
+
+p.exp{
+	padding: 0.5em;
+}
+
+.notice .exp a{
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 860px){
+	.notice h1{
+		font-size: 2.5em;
+		padding: 1em;
+	}
+}
+
+
+
+
+/* About Me */
+.icon img{
+	display: block;
+	width: 10em;
+	margin: 1em auto;
+	border-radius: 5em;
+	box-shadow: 0 0 20px grey;
+	transition: transform 1s;
+}
+
+.icon img:hover{
+	transform: scale(1.1, 1.1);
+}
+
+/* Video from YouTube */
+iframe.yt{
+	display: block;
+	width: 560px;
+	max-width: 100%;
+	height: 315px;
+	margin: auto;
+	padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 768px){
+	iframe.yt{
+		width: 700px;
+		height: 394px;
+	}
+}

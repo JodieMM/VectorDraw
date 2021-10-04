@@ -1,0 +1,59 @@
+/*--- TIMELINE STYLES ---*/
+
+.timeline{
+	position: relative;
+	margin-left: 48px;
+	padding: 0.5em;
+	padding-left: 1em;
+	border-left: 8px solid #9a61b2;
+	font-size: 26px;
+}
+
+.timeline:before{
+	content: attr(month);
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.timeline:after{
+	width: 5px;
+	height: 5px;
+	content: "";
+}
+
+.timeline:last-child{
+	border-left: 8px dashed #9a61b2;
+}
+
+.timeline p{
+	padding: 1em 0;
+}
+
+.month-pointer{
+	position: absolute;
+    width: 35px;
+    height: 5px;
+    left: -19px;
+    top: 25px;
+    background-color: #653b78;
+    border-radius: 3px;
+}
+
+.month-pointer:before{
+	position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #653b78;
+    top: -5px;
+    border-radius: 7.5px;
+	content: "";
+}
+
+
+
+
+
+
+
+
+
